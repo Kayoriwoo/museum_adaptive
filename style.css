@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.white {
+    background: white;
+}
+
+.font-forum {
+    font-family: 'Forum', cursive;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-weight-thm {
+    font-weight: 100;
+}
+
+li {
+    color: white;
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: black;
+    padding: 20px 0px;
+}
+
+.header__logo {
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.header__logo-font {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.header-font {
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.header_container {
+    max-width: 75.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_container a {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    margin-left: 80px;
+
+    color: white;
+}
+
+a:hover {
+    color: #9D8665;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+ul {
+    display: flex;
+}
+
+nav {
+    background: black;
+}
+
+@media screen and (max-width: 1250px) {
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .main-menu li {
+        width: 100%;
+        display: block;
+    }
+
+    .main-menu a {
+        display: block;
+
+    }
+
+    .toggle-button {
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+
+    .toggle-button:after {
+        margin: 10px;
+        content: attr(data-open);
+        display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+        display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+        content: attr(data-close);
+    }
+
+    .header-container a {
+        margin-right: -65px;
+
+    }
+    .main-menu{
+        position: relative;
+        top: 10px;
+        right: 30px;
+    }
+}
