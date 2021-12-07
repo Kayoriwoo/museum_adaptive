@@ -1,6 +1,6 @@
 header {
     background: #030303;
-    padding: 20px 0px 25px;
+    padding: 20px 0 25px;
     height: 200px;
 }
 
@@ -51,6 +51,14 @@ header {
         width: 100%;
         display: flex;
         justify-content: space-around;
+    }
+
+    .header__logo {
+        display: flex;
+        align-items: flex-start;
+    }
+    .header__logo img {
+        padding-top: 5px;
     }
 
     .main-menu {
