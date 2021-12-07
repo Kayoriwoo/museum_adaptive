@@ -1,52 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-.black {
-    background-color: #000000;
-}
-
-.white {
-    background: white;
-}
-
-.font-forum {
-    font-family: 'Forum', cursive;
-}
-
-.font-roboto {
-    font-family: 'Roboto', sans-serif;
-}
-
-.font-weight-thm {
-    font-weight: 100;
-}
-
-li {
-    color: white;
-    list-style: none;
-    display: flex;
-}
-
-a {
-    text-decoration: none;
-}
-
 header {
-    background: black;
-    padding: 20px 0px;
+    background: #030303;
+    padding: 20px 0px 25px;
+    height: 200px;
 }
 
 .header__logo {
     color: white;
     display: flex;
     align-items: center;
-
+    margin-bottom: 5px;
+    margin-left: 5px;
 }
 
 .header__logo-font {
@@ -55,8 +18,8 @@ header {
     font-size: 28px;
     color: #FFFFFF;
     letter-spacing: 5px;
-    margin-top: 5px;
     margin-left: 20px;
+    margin-top: 5px;
 }
 
 .header-font {
@@ -73,28 +36,15 @@ header {
 }
 
 .header_container a {
-    margin-top: 65px;
-    margin-bottom: 65px;
-    margin-left: 80px;
-
+    margin: 65px 5px 65px 71px;
     color: white;
-}
-
-a:hover {
-    color: #9D8665;
 }
 
 #menu-checkbox {
     display: none;
 }
 
-ul {
-    display: flex;
-}
 
-nav {
-    background: black;
-}
 
 @media screen and (max-width: 1250px) {
     .header-container {
@@ -125,7 +75,7 @@ nav {
     }
 
     .toggle-button:after {
-        margin: 10px;
+        margin: 8px;
         content: attr(data-open);
         display: block;
     }
