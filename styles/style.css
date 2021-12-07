@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('header.css');
+@import url('welcome.css');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.black {
+    background-color: #030303;
+}
+
+.white {
+    background: white;
+}
+
+.font-forum {
+    font-family: 'Forum', cursive;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-weight-thm {
+    font-weight: 100;
+}
+
+ul {
+    display: flex;
+}
+
+nav {
+    background-color: #030303;
+}
+
+li {
+    color: white;
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9D8665;
+}
+
+.container {
+    max-width: 75.5%;
+    margin: 0 auto;
+    padding: 0;
+}
