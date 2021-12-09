@@ -1,0 +1,81 @@
+#tour h2 {
+    margin-bottom: 30px;
+}
+
+.tour__text {
+    width: 165px;
+    height: 26px;
+    left: 0;
+    top: 366px;
+
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.tour__text + p {
+    width: 300px;
+    height: 21px;
+    left: 0;
+    top: 402px;
+    margin-top: 10px;
+
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+article h3 {
+    width: 440px;
+    height: 35px;
+    left: 0;
+    top: 310px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.articles_container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 75px;
+    justify-content: space-between;
+}
+
+article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+}
+
+article hr {
+    width: 300px;
+    transition: 1s;
+    height: 2px;
+}
+
+article:hover hr {
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: #9D8665;
+}
