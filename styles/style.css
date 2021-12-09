@@ -3,6 +3,7 @@
 @import url('header.css');
 @import url('welcome.css');
 @import url('virtual_tour.css');
+@import url('picture_explore.css');
 
 html {
     scroll-behavior: smooth;
@@ -30,6 +31,7 @@ body{
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
 
 .black {
