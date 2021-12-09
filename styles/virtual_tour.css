@@ -44,6 +44,10 @@ article h3 {
     margin-bottom: 10px;
 }
 
+article h3:hover {
+    color: #9D8665;
+}
+
 .articles_container {
     position: relative;
     display: flex;
