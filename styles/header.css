@@ -1,7 +1,22 @@
-header {
+.header {
     background: #030303;
     padding: 20px 0 25px;
     height: 200px;
+}
+
+.header__navigation-list {
+    display: flex;
+}
+
+.header__nav {
+    background-color: #030303;
+    z-index: 2;
+}
+
+.header__navigation-list li {
+    color: white;
+    list-style: none;
+    display: flex;
 }
 
 .header__logo {
@@ -22,7 +37,7 @@ header {
     margin-top: 5px;
 }
 
-.header-font {
+.header__content-font {
     font-size: 22px;
     color: #FFFFFF;
     letter-spacing: 2px;
@@ -40,11 +55,9 @@ header {
     color: white;
 }
 
-#menu-checkbox {
+.burger {
     display: none;
 }
-
-
 
 @media screen and (max-width: 1250px) {
     .header-container {
@@ -53,56 +66,42 @@ header {
         justify-content: space-around;
     }
 
+    .burger {
+        display: flex;
+    }
+
     .header__logo {
         display: flex;
         align-items: flex-start;
     }
+
     .header__logo img {
         padding-top: 5px;
     }
 
-    .main-menu {
-        display: none;
-    }
-
-    .main-menu li {
+    /*меню бургер*/
+    .header__navigation-list li {
         width: 100%;
         display: block;
     }
 
-    .main-menu a {
+    .header__navigation-list a {
         display: block;
-
     }
 
-    .toggle-button {
+    .header__navigation-list {
         text-align: center;
         display: block;
         cursor: pointer;
         color: white;
-    }
-
-    .toggle-button:after {
-        margin: 8px;
-        content: attr(data-open);
-        display: block;
-    }
-
-    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
-        display: block;
-    }
-
-    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
-        content: attr(data-close);
-    }
-
-    .header-container a {
-        margin-right: -65px;
-
-    }
-    .main-menu{
         position: relative;
         top: 10px;
         right: 30px;
     }
+
+    /*скрыть меню*/
+    .header__navigation-list {
+        display: none;
+    }
+
 }

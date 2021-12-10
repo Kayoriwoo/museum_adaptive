@@ -1,7 +1,7 @@
-.welcome-bg {
+.welcome__bg {
     background: #030303 url("../image/welcome.jpg") no-repeat center right;
 }
-#welcome {
+.welcome_section {
     height: 750px;
 }
 
@@ -14,7 +14,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     white-space: pre;
-    padding-top: 114px;
+
 }
 
 .welcome__text {
@@ -27,7 +27,7 @@
     margin-top: 30px;
 }
 
-.welcome-button {
+.welcome__button {
     font-style: normal;
     font-weight: 200;
     font-size: 22px;
@@ -44,36 +44,38 @@
     margin-top: 70px;
 }
 
-.btn-content-center {
+.button__content {
     justify-content: center;
 }
 
-.welcome_container {
-    max-width: 75.5%;
+.welcome__container {
+    max-width: 83.8%;
+    width: 100%;
     margin: 0 auto;
+    padding: 114px 75px;
 }
 
-@media screen and (max-width: 720px) {
-    .welcome_container {
+@media screen and (max-width: 730px) {
+    .welcome__container {
         width: 100%;
     }
     .welcome__title {
         font-size: 70px;
     }
 }
-@media screen and (max-width: 640px) {
-    .welcome_container {
+@media screen and (max-width: 650px) {
+    .welcome__container {
         width: 100%;
     }
     .welcome__title {
         font-size: 60px;
     }
 }
-@media screen and (max-width: 560px) {
-    .welcome_container {
+@media screen and (max-width: 580px) {
+    .welcome__container {
         width: 100%;
     }
     .welcome__title {
-        font-size: 50px;
+        font-size: 48px;
     }
 }
