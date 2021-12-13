@@ -44,7 +44,7 @@ to the Louvre</h2>
     </section>
     <section id="tour" class="section__tour white">
         <div class="wrapper">
-        <div class="container">
+        <div class="tour__container">
             <h2 class="title font-forum gold">Virtual Tour</h2>
             <hr>
             <div class="tour__articles__container">
@@ -132,6 +132,65 @@ to the Louvre</h2>
                 </div>
             </div>
         </div>
+        </div>
+    </section>
+    <section id="video" class="white">
+        <div class="video__container">
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+            <div class="video__content__container video__content">
+                <div class="video__content__container-title">
+                    <h2 class="font-forum title gold">Video journey</h2>
+                </div>
+                    <div class="video__content__container-text font-roboto">Enter and visit one of the most famous museums in
+                        the world and enjoy masterpieces such as Mona Lisa or
+                        Hammurabi's Code
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="tickets" class="black">
+        <div class="tickets container">
+            <h2 class="title font-forum">Buy tickets</h2>
+            <hr>
+            <div class="tickets__container">
+                <div class="tickets__container-img">
+                    <img alt="Shield of Aeneas" src="image/tickets.jpg">
+                </div>
+                <div class="tickets__container__content">
+                    <div class="tickets__container__content__ticket_type font-roboto">
+                        <p class="tickets__title"><strong>Ticket Type</strong></p>
+                        <div class="form-radio">
+                            <input checked id="ticketType1" name="ticket" type="radio" value="radio1">
+                            <label for="ticketType1" class="radio-label">Permanent exhibition</label>
+                        </div>
+                        <div class="form-radio">
+                            <input id="ticketType2" name="ticket" type="radio" value="radio2">
+                            <label for="ticketType2" class="radio-label">Temporary exhibition</label>
+                        </div>
+                        <div class="form-radio">
+                            <input id="ticketType3" name="ticket" type="radio" value="#radio3">
+                            <label for="ticketType3" class="radio-label">Combined Admission</label>
+                        </div>
+                    </div>
+                    <div class="tickets__container__content__amount font-roboto">
+                        <p class="tickets__title"><strong>Amount</strong></p>
+                        <div>
+                            <p>Basic 18+</p>
+                            <div class="tickets__container__content__amount-rectangle"><span> -     </span> 1 <span>     + </span></div>
+                        </div>
+                        <div class="tickets__amount__senior">
+                            <p>Senior 65+</p>
+                            <div class="tickets__container__content__amount-rectangle"><span> -     </span> 1 <span>     + </span></div>
+                        </div>
+                        <p class="tickets__title font-roboto tickets__container__content__amount-total"><strong>Total €220</strong></p>
+                        <button class="tickets__button font-roboto">Buy now</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
