@@ -99,7 +99,7 @@ hr {
 }
 
 .container {
-    max-width: 83.8%;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     padding: 75px;
@@ -138,30 +138,48 @@ hr {
 /*    }*/
 /*}*/
 
-/*@media screen and (max-width: 480px) {*/
-/*    .tour__articles__container img {*/
-/*        max-width: 380px;*/
-/*        width: 100%;*/
-/*    }*/
-/*    .tour__articles__container .tour__article {*/
-/*        max-width: 350px;*/
-/*        width: 100%;*/
-/*    }*/
-/*    .tour__article div {*/
-/*        max-width: 350px;*/
-/*        width: 100%;*/
-/*    }*/
-/*    .tour__article div hr {*/
-/*        max-width: 350px;*/
-/*        width: 100%;*/
-/*    }*/
-/*    .tour__article div h3 {*/
 
-/*        max-width: 350px;*/
-/*        width: 100%;*/
-/*    }*/
-/*    .wrapper {*/
-/*        max-width: 390px;*/
-/*        width: 100%;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 1400px) {
+
+    footer .container {
+        padding: 14px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .tour__article  {
+        width: 100%;
+    }
+    .tour__article img {
+        width: 100%;
+    }
+    .tour__article h3 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px) {
+
+.container, .tour__container, .welcome__container, .video__container {
+    padding: 20px;
+}
+    .title {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .tour__article {
+        width: 100%;
+    }
+    .tour__article hr {
+        width: 100%;
+    }
+    /*.article__elem3 {*/
+    /*   font-size: 20px;*/
+    /*}*/
+}

@@ -60,6 +60,9 @@
 }
 
 @media screen and (max-width: 1250px) {
+    .header {
+        height: 100px;
+    }
     .header-container {
         width: 100%;
         display: flex;
