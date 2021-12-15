@@ -49,7 +49,7 @@
 }
 
 .welcome__container {
-    max-width: 83.8%;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     padding: 114px 75px;
@@ -77,5 +77,30 @@
     }
     .welcome__title {
         font-size: 48px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .welcome__container {
+        width: 100%;
+    }
+    .welcome__title {
+        font-size: 40px;
+    }
+    .welcome__button {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 380px) {
+
+    .welcome__button {
+        width: 320px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .welcome__title {
+        font-size: 34px;
+    }
+    .welcome__button {
+        width: 300px;
     }
 }

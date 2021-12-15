@@ -46,8 +46,11 @@ address p {
 }
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
+    .contacts__container__img {
+        width: 100%;
+    }
     .contacts__container__img img{
-        max-width: 100%;
+        width: 100%;
     }
 }

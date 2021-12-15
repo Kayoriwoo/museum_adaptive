@@ -10,7 +10,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 46%;
+    max-width: 50%;
+    width: 100%;
+    padding-right: 50px;
 }
 
 .explore__container-image {
@@ -18,6 +20,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 50%;
+    width: 100%;
     padding-top: 15px;
 }
 
@@ -39,14 +42,20 @@
     .explore__container {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .explore__container-content {
         max-width: 100%;
     }
 
 }
-@media screen and (max-width: 930px) {
-    .explore__container-image img{
+@media screen and (max-width: 1400px) {
+
+    .explore__container-image {
+
         max-width: 100%;
+    }
+    .explore__container-image img{
+        width: 100%;
     }
 }
