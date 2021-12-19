@@ -14,7 +14,6 @@
     text-transform: uppercase;
     color: #FFFFFF;
     white-space: pre;
-
 }
 
 .welcome__text {
@@ -42,6 +41,7 @@
     width: 360px;
     height: 75px;
     margin-top: 70px;
+    transition: 0.5s;
 }
 
 .button__content {
@@ -101,6 +101,6 @@
         font-size: 34px;
     }
     .welcome__button {
-        width: 300px;
+        width: 290px;
     }
 }
