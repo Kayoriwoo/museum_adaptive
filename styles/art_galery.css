@@ -22,6 +22,10 @@
     position: absolute;
     width: 100%;
 }
+
+.blackout img {
+    width: 100%;
+}
 /*.gallery__container__content::after {*/
 /*    content: '';*/
 /*    position: absolute;*/
