@@ -111,10 +111,25 @@ hr {
 }
 
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 870px) {
 
     footer .container {
         padding: 14px;
+    }
+    .footer__container__logo {
+        display: flex;
+        flex-basis: 100%;
+        align-self: center;
+    }
+    .footer__container__navigation {
+        display: flex;
+        flex-basis: 100%;
+        align-self: center;
+    }
+    .footer__container__icons {
+        display: flex;
+        flex-basis: 100%;
+        align-self: center;
     }
 }
 
