@@ -1,8 +1,8 @@
-.welcome-bg {
-    background: #030303 url("../image/welcome.jpg") no-repeat center right;
-}
-#welcome {
-    height: 750px;
+/*.welcome__bg {*/
+/*    background: #030303 url("../image/welcome.jpg") no-repeat center right;*/
+/*}*/
+.welcome_section {
+    height: 60%;
 }
 
 .welcome__title {
@@ -14,7 +14,6 @@
     text-transform: uppercase;
     color: #FFFFFF;
     white-space: pre;
-    padding-top: 114px;
 }
 
 .welcome__text {
@@ -27,7 +26,7 @@
     margin-top: 30px;
 }
 
-.welcome-button {
+.welcome__button {
     font-style: normal;
     font-weight: 200;
     font-size: 22px;
@@ -42,38 +41,171 @@
     width: 360px;
     height: 75px;
     margin-top: 70px;
+    transition: 0.5s;
 }
 
-.btn-content-center {
+.button__content {
     justify-content: center;
 }
 
-.welcome_container {
-    max-width: 75.5%;
+.welcome__container {
     margin: 0 auto;
+    height: 750px;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 114px 75px;
 }
 
-@media screen and (max-width: 720px) {
-    .welcome_container {
+.welcome__container__content {
+    max-width: 50%;
+    width: 100%;
+
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+
+/* Слайдер */
+.slideshow__container {
+    max-width: 50%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+    margin: auto;
+    z-index: 4;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+/* Медиа-запросы */
+@media screen and (max-width: 1250px) {
+    .welcome_section {
+        height: 1000px;
+    }
+    .welcome__container__content{
         width: 100%;
+        max-width: 100%;
+        display: flex;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .slideshow__container {
+        padding-top: 20px;
+        width: 600px;
+        height: 600px;
+    }
+    .slideshow__container img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .welcome__container {
+        width: 100%;
+
     }
     .welcome__title {
         font-size: 70px;
     }
 }
-@media screen and (max-width: 640px) {
-    .welcome_container {
+@media screen and (max-width: 650px) {
+    .welcome__container {
         width: 100%;
     }
     .welcome__title {
         font-size: 60px;
     }
 }
-@media screen and (max-width: 560px) {
-    .welcome_container {
+@media screen and (max-width: 580px) {
+    .welcome__container {
         width: 100%;
     }
     .welcome__title {
-        font-size: 50px;
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .welcome__container {
+        width: 100%;
+    }
+    .welcome__title {
+        font-size: 40px;
+    }
+    .welcome__button {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 380px) {
+
+    .welcome__button {
+        width: 320px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .welcome__title {
+        font-size: 34px;
+    }
+    .welcome__button {
+        width: 290px;
     }
 }

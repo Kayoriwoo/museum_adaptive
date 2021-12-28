@@ -1,41 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
     <title>Museum-adaptive</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<header class="black header-font">
-    <div class="header_container">
+<header class="header black">
+    <div class="wrapper">
+    <div class="header_container header__content-font">
         <div class="header__logo">
             <img src="image/logo.svg" alt="logo">
             <h1 class="header__logo-font font-forum">LOUVRE</h1>
         </div>
-        <input type="checkbox" id="menu-checkbox"/>
-        <nav role="navigation">
-            <label for="menu-checkbox" class="toggle-button font-forum" data-open="Menu" data-close="Close" onclick></label>
-                <ul class="main-menu font-roboto font-weight-thm">
+<!--        <input type="checkbox" id="menu-checkbox"/>-->
+        <nav class="header__nav" role="navigation">
+<!--            <label for="menu-checkbox" class="toggle-button font-forum" data-open="Menu" data-close="Close" onclick></label>-->
+                <ul class="header__navigation-list font-roboto font-weight-thm">
                 <li><a href="#tour">Visiting</a></li>
                 <li><a href="#explore">Explore</a></li>
                 <li> <a href="#video">Video</a></li>
+                <li> <a href="#gallery">Gallery</a></li>
                 <li> <a href="#tickets">Tickets</a></li>
                 <li> <a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
+        <div class="burger"> <img src="image/menu.jpg" alt="menu"> </div>
+    </div>
     </div>
 </header>
 <main>
-    <section id="welcome" class="black welcome-bg">
-        <div class="welcome_container">
+    <section id="welcome" class="welcome_section black welcome__bg">
+        <div class="wrapper">
+        <div class="welcome__container">
+            <div class="welcome__container__content">
             <h2 class="welcome__title font-forum">Welcome
 to the Louvre</h2>
             <div class="welcome__text font-roboto font-weight-thm">From the castle to the museum</div>
             <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">
-                <button class="welcome-button btn-content-center font-roboto font-weight-thm">Discover the Louvre
-            </button></a>>
+                <button class="welcome__button button__content font-roboto font-weight-thm">Discover the Louvre
+            </button></a>
+            </div>
+            <div  class="slideshow__container">
+            <div>
+                <div class="mySlides fade">
+                    <img src="image/1.png" style="width: 100%;" alt="mona">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/1.png" style="width: 100%;" alt="mona">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/1.png" style="width: 100%;" alt="mona">
+                </div>
+
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script src="slider.js"></script>
+        </div>
+        </div>
+        </div>
+
+    </section>
+    <section id="tour" class="section__tour white">
+        <div class="wrapper">
+        <div class="tour__container">
+            <h2 class="title font-forum gold">Virtual Tour</h2>
+            <hr>
+            <div class="tour__articles__container">
+                <article class="tour__article">
+                    <img alt="Royal place" src="image/visiting1.jpg">
+                    <div>
+                        <a href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815">
+                            <h3 class="font-forum">Royal palace</h3></a>
+                        <hr>
+                        <p class="tour__text font-roboto font-weight-thm">360° Virtual Tour</p>
+                        <p class="font-roboto font-weight-thm">Google Street Panorama View </p>
+                    </div>
+                </article>
+                <article class="tour__article">
+                    <img alt="Denon wing" src="image/visiting2.jpg">
+                    <div>
+                        <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500">
+                            <h3 class="font-forum">Denon wing</h3></a>
+                        <hr>
+                        <p class="tour__text font-roboto font-weight-thm">360° Virtual Tour</p>
+                        <p class="font-roboto font-weight-thm">Google Street Panorama View </p>
+                    </div>
+                </article>
+                <article class="tour__article">
+                    <img alt="Colonnade perrault" src="image/visiting3.jpg">
+                    <div>
+                        <a href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120">
+                            <h3 class="font-forum article__elem3">Colonnade perrault</h3></a>
+                        <hr>
+                        <p class="tour__text font-roboto font-weight-thm">360° Virtual Tour</p>
+                        <p class="font-roboto font-weight-thm">Google Street Panorama View </p>
+                    </div>
+                </article>
+                <article class="tour__article">
+                    <img alt="Greek hall" src="image/visiting4.jpg">
+                    <div>
+                        <a href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736">
+                            <h3 class="font-forum">Greek hall</h3></a>
+                        <hr>
+                        <p class="tour__text font-roboto font-weight-thm">360° Virtual Tour</p>
+                        <p class="font-roboto font-weight-thm">Google Street Panorama View </p>
+                    </div>
+                </article>
+                <article class="tour__article">
+                    <img alt="Mona Lisa" src="image/visiting5.jpg">
+                    <div>
+                        <a href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120">
+                            <h3 class="font-forum">Mona Lisa</h3></a>
+                        <hr>
+                        <p class="tour__text font-roboto font-weight-thm">360° Virtual Tour</p>
+                        <p class="font-roboto font-weight-thm">Google Street Panorama View </p>
+                    </div>
+                </article>
+                <article class="tour__article">
+                    <img alt="Night palace" src="image/visiting6.jpg">
+                    <div>
+                        <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652">
+                            <h3 class="font-forum">Night palace</h3></a>
+                        <hr>
+                        <p class="tour__text font-roboto font-weight-thm">360° Virtual Tour</p>
+                        <p class="font-roboto font-weight-thm">Google Street Panorama View </p>
+                    </div>
+                </article>
+            </div>
+        </div>
         </div>
     </section>
+    <section id="explore" class="section__explore black">
+        <div class="wrapper">
+        <div class="container">
+            <div class="explore__container">
+                <div class="explore__container-content">
+                    <h2 class="title font-forum">Picture explore</h2>
+                    <hr>
+                    <div class="explore__text font-roboto font-weight-thm">
+                        <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of
+                            the Spanish Golden Age.</p>
+                        <p>It was cleaned in 1984 to remove a <span class="white-gold">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
+                        <p>The cleaning provoked furious protests, not because
+                            the picture had been damaged in any way, but because it looked different.</p>
+                    </div>
+                </div>
+                <div class="explore__container-image">
+                    <div class="slider">
+                        <div class="original-image"> </div>
+                        <input class="input" type="range" value="20" max="100">
+                    </div>
+                    <script src="slider2.js"></script>
+<!--                    <img alt="Las Meninas" src="image/explore.jpg">-->
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="video" class="white">
+        <div class="wrapper">
+        <div class="video__container">
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+            <div class="video__content__container video__content">
+                <div class="video__content__container-title">
+                    <h2 class="font-forum title gold">Video journey</h2>
+                </div>
+                    <div class="video__content__container-text font-roboto">Enter and visit one of the most famous museums in
+                        the world and enjoy masterpieces such as Mona Lisa or
+                        Hammurabi's Code
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="gallery" class="black">
+        <div class="wrapper">
+            <div class="gallery__container">
+                <div>
+                    <h2 class="font-forum title">Art gallery</h2>
+                </div>
+                <div class="gallery__container__content gallery__container__content__blur">
+                    <div class="gallery__container__content-1">
+                    <img alt="img" src="image/galery2%201.png">
+                    <img alt="img" src="image/galery9%201.png">
+                    <img alt="img" src="image/galery4%201.png">
+                    </div>
+                        <div class="gallery__container__content-2">
+                            <img alt="img" src="image/galery1%201.png">
+                            <img alt="img" src="image/galery8%201.png">
+                            <img alt="img" src="image/galery3%201.png">
+                        </div>
+                            <div class="gallery__container__content-3">
+                                <img alt="img" src="image/galery7%201.png">
+                                <img alt="img" src="image/galery10%201.png">
+                                <img alt="img" src="image/galery15%201.png">
+                            </div>
+                    <div class="blackout">  <img alt="img" src="image/blackout.png"></div>
+                </div>
+                </div>
+            </div>
+    </section>
+    <section id="tickets" class="white">
+        <div class="wrapper">
+        <div class="tickets container">
+            <h2 class="title font-forum gold">Buy tickets</h2>
+            <hr>
+            <div class="tickets__container">
+                <div class="tickets__container-img">
+                    <img alt="Shield of Aeneas" src="image/tickets.jpg">
+                </div>
+                <div class="tickets__container__content">
+                    <div class="tickets__container__content__ticket_type font-roboto">
+                        <p class="tickets__title"><strong>Ticket Type</strong></p>
+                        <div class="form-radio">
+                            <input checked id="ticketType1" name="ticket" type="radio" value="radio1">
+                            <label for="ticketType1" class="radio-label">Permanent exhibition</label>
+                        </div>
+                        <div class="form-radio">
+                            <input id="ticketType2" name="ticket" type="radio" value="radio2">
+                            <label for="ticketType2" class="radio-label">Temporary exhibition</label>
+                        </div>
+                        <div class="form-radio">
+                            <input id="ticketType3" name="ticket" type="radio" value="#radio3">
+                            <label for="ticketType3" class="radio-label">Combined Admission</label>
+                        </div>
+                    </div>
+                    <div class="tickets__container__content__amount font-roboto">
+                        <p class="tickets__title"><strong>Amount</strong></p>
+                        <div>
+                            <p>Basic 18+</p>
+                            <div class="tickets__container__content__amount-rectangle"><span> -     </span> 1 <span>     + </span></div>
+                        </div>
+                        <div class="tickets__amount__senior">
+                            <p>Senior 65+</p>
+                            <div class="tickets__container__content__amount-rectangle"><span> -     </span> 1 <span>     + </span></div>
+                        </div>
+                        <p class="tickets__title font-roboto tickets__container__content__amount-total"><strong>Total €220</strong></p>
+                        <button class="tickets__button font-roboto">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <img alt="Parallax" src="image/parallax%201.png" class="parallax">
+    <section id="contacts" class="contacts">
+        <div class="wrapper">
+        <div class="container">
+            <h2 class="title gold font-forum">Contacts</h2>
+            <hr>
+            <div class="contacts__container">
+                <div class="contacts contacts__container__content">
+                    <div class="contacts__title font-roboto">
+                        <p>Palais Royal</p>
+                        <p>Musee du Louvre</p>
+                    </div>
+                    <address class="font-roboto">
+                        <p>address: 75001 Paris, France</p>
+                        <p>phone: +33(0) 1 40 20 50 50</p>
+                        <p>mail: info@louvre.fr</p>
+                    </address>
+                </div>
+                <div class="contacts__container__img">
+                <img alt="Map" src="image/contacts.png">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="black">
+        <div class="wrapper">
+        <div class="footer__content container">
+            <div class="footer__container">
+            <div class="footer__cell footer__container__logo">
+                <p class="footer-title font-forum footer__logo footer-elem2">LOUVRE</p>
+            </div>
+            <div class="footer__container__navigation footer__cell font-roboto font-weight-thm">
+                <nav class="footer__nav__sub-section footer__nav__sub-section1">
+                    <ul>
+                        <li><a href="#tour">Visiting</a></li>
+                        <li><a href="#explore">Explore</a></li>
+                        <li> <a href="#video">Video</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav__sub-section footer__nav__sub-section2">
+                    <ul>
+                        <li> <a href="#gallery">Gallery</a></li>
+                        <li> <a href="#tickets">Tickets</a></li>
+                        <li> <a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__cell footer__container__div__icons">
+                <div class="icons footer__container__icons footer-elem3">
+                    <a href="https://www.youtube.com/user/louvre"><div class="youtube"><img alt="youtube" src="image/youtube.svg"></div></a>
+                    <a href="https://www.instagram.com/museelouvre/"><div class="inst"><img alt="instagram" src="image/inst.svg"></div></a>
+                    <a href="https://www.facebook.com/museedulouvre"><div class="facebook"><img alt="facebook" src="image/facebook.svg"></div></a>
+                    <a href="https://twitter.com/museelouvre"><div class="twitter"><img alt="twitter" src="image/twitter.svg"></div></a>
+                    <a href="https://www.pinterest.fr/museedulouvre/"><div class="pinterest"><img alt="pinterest" src="image/pinterest.svg"></div></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
 </main>
 </body>
 </html>

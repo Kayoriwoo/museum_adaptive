@@ -1,0 +1,94 @@
+.video__container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 75px 75px 40px;
+}
+
+.video__content__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.video__content__container-text {
+
+    font-weight: 350;
+    font-size: 22px;
+    line-height: 38px;
+    color: black;
+    padding-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.video__content__container-title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.video__content__container > .video__content__container-text, .video__content__container-title {
+    width: 50%;
+}
+
+.video__iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 707px;
+}
+
+.video__content {
+    padding-top: 33px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .video__content__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .video__content__container-title {
+        width: 100%;
+    }
+    .video__content__container-text{
+        display: flex;
+        max-width: 100%;
+    }
+    .video__content__container > .video__content__container-text, .video__content__container-title {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .video__iframe {
+        margin-top: 10px;
+        width: 100%;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .video__iframe {
+        margin-top: 10px;
+        width: 100%;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .video__iframe {
+        margin-top: 10px;
+        width: 100%;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .video__iframe {
+        margin-top: 10px;
+        width: 100%;
+        height: 200px;
+    }
+}

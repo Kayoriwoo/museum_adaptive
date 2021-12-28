@@ -1,0 +1,125 @@
+.gallery__container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 75px 75px 0 75px;
+}
+
+.gallery__container__content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    justify-content: space-between;
+
+    gap: 10px;
+    padding-bottom: 10px;
+
+}
+.blackout {
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    width: 100%;
+}
+
+.blackout img {
+    width: 100%;
+}
+/*.gallery__container__content::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 300px;*/
+/*    background: url(/image/blackout.png);*/
+/*    !*background: rgba(0,0,0,0.5);*!*/
+/*    !*transition: opacity 0.6s;*!*/
+
+/*    margin-top: 1390px;*/
+/*    opacity: 1;*/
+/*    !*opacity: 0;*!*/
+/*}*/
+/*.gallery__container__content:hover::after {*/
+/*     opacity: 1;*/
+/* }*/
+
+.gallery__container__content-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.gallery__container__content-1 img {
+    padding: 8px;
+    width: 100%;
+}
+
+.gallery__container__content-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.gallery__container__content-2 img {
+    padding: 8px;
+    width: 100%;
+}
+
+.gallery__container__content-3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.gallery__container__content-3 img {
+    padding: 8px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1570px)  {
+    .gallery__container__content-1 {
+        max-width: 32%;
+        width: 100%;
+    }
+    .gallery__container__content-2 {
+        max-width: 32%;
+        width: 100%;
+    }
+    .gallery__container__content-3 {
+        max-width: 32%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px)  {
+    .gallery__container__content-1 {
+        max-width: 31%;
+        width: 100%;
+    }
+    .gallery__container__content-2 {
+        max-width: 31%;
+        width: 100%;
+    }
+    .gallery__container__content-3 {
+        max-width: 31%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 340px)  {
+    .gallery__container__content-1 {
+        max-width: 30%;
+        width: 100%;
+    }
+    .gallery__container__content-2 {
+        max-width: 30%;
+        width: 100%;
+    }
+    .gallery__container__content-3 {
+        max-width: 30%;
+        width: 100%;
+    }
+}

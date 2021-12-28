@@ -1,0 +1,83 @@
+.tour__container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 75px 75px 0;
+}
+
+.tour__text {
+    width: 165px;
+    height: 26px;
+    left: 0;
+    top: 366px;
+
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.tour__text + p {
+    width: 300px;
+    height: 21px;
+    left: 0;
+    top: 402px;
+    margin-top: 10px;
+
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tour__article h3 {
+
+    height: 35px;
+    left: 0;
+    top: 310px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.tour__article h3:hover {
+    color: #9D8665;
+}
+
+.tour__articles__container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 75px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.tour__article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+}
+
+.tour__article hr {
+    width: 300px;
+    transition: 1s;
+    height: 2px;
+}
+
+.tour__article:hover hr {
+    width: 100%;
+}
+
