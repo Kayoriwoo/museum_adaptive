@@ -34,14 +34,41 @@
     <section id="welcome" class="welcome_section black welcome__bg">
         <div class="wrapper">
         <div class="welcome__container">
+            <div class="welcome__container__content">
             <h2 class="welcome__title font-forum">Welcome
 to the Louvre</h2>
             <div class="welcome__text font-roboto font-weight-thm">From the castle to the museum</div>
             <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">
                 <button class="welcome__button button__content font-roboto font-weight-thm">Discover the Louvre
             </button></a>
+            </div>
+            <div  class="slideshow__container">
+            <div>
+                <div class="mySlides fade">
+                    <img src="image/1.png" style="width: 100%;" alt="mona">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/1.png" style="width: 100%;" alt="mona">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/1.png" style="width: 100%;" alt="mona">
+                </div>
+
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script src="slider.js"></script>
         </div>
         </div>
+        </div>
+
     </section>
     <section id="tour" class="section__tour white">
         <div class="wrapper">

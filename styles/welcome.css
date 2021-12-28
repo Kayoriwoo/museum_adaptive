@@ -1,8 +1,8 @@
-.welcome__bg {
-    background: #030303 url("../image/welcome.jpg") no-repeat center right;
-}
+/*.welcome__bg {*/
+/*    background: #030303 url("../image/welcome.jpg") no-repeat center right;*/
+/*}*/
 .welcome_section {
-    height: 750px;
+    height: 60%;
 }
 
 .welcome__title {
@@ -49,15 +49,67 @@
 }
 
 .welcome__container {
-    max-width: 1600px;
-    width: 100%;
     margin: 0 auto;
+    height: 750px;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
     padding: 114px 75px;
+}
+
+.welcome__container__content {
+    max-width: 50%;
+    width: 100%;
+
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+
+.slideshow__container {
+    max-width: 50%;
+    width: 100%;
+
+    display: flex;
+    margin: auto;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    z-index: 4;
+}
+
+@media screen and (max-width: 1250px) {
+    .welcome_section {
+        height: 1000px;
+    }
+    .welcome__container__content{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .slideshow__container {
+        padding-top: 20px;
+        width: 600px;
+        height: 600px;
+    }
+    .slideshow__container img{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 730px) {
     .welcome__container {
         width: 100%;
+
     }
     .welcome__title {
         font-size: 70px;
